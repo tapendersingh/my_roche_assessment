@@ -1,6 +1,7 @@
 # Analytical Data Science Programmer — Coding Assessment
 
-This repository contains my solutions to the **Pharmaverse Expertise and Python Coding Assessment** (Roche PD Data Science). It covers SDTM domain creation, ADaM ADSL derivation, clinical TLG reporting, and a bonus GenAI/Python exercise.
+This repository contains my solutions to the **Analytical Data Science Programmer Coding Assessment** (Roche PD Data Science). It covers SDTM domain creation, ADaM ADSL derivation, clinical TLG reporting, and a bonus GenAI/Python exercise.
+Here is the Structure of the repository - 
 
 ## Repository Structure
 
@@ -33,10 +34,10 @@ This repository contains my solutions to the **Pharmaverse Expertise and Python 
 │       └── 02_create_visualizations.log
 │
 └── question_4_genai/            # Bonus
-    ├── clinical_trial_data_agent.py
-    ├── test_queries.py
-    └── output/
-        └── test_run.log
+    ├── clinical_trial_agent.py
+    ├── clinical_trial_agent.R
+    └── data/
+        └── adae.csv
 ```
 
 ## Contents by Folder
@@ -64,9 +65,11 @@ This repository contains my solutions to the **Pharmaverse Expertise and Python 
 
 ### `question_4_genai/` — GenAI Clinical Data Assistant (Bonus, Python)
 - **Objective:** `ClinicalTrialDataAgent` that parses natural-language questions about `adae.csv` into structured JSON (`target_column`, `filter_value`) and applies the corresponding Pandas filter.
-- **Files:**
-  - `clinical_trial_data_agent.py` — schema definition, LLM prompt/parse logic (or mocked LLM response), and filter execution returning unique `USUBJID` count + matching IDs.
-  - `test_queries.py` — runs 3 example natural-language queries and prints results.
+- **Scripts:**
+  - `clinical_trial_agent.py` — schema definition, LLM prompt/parse logic (or mocked LLM response), and filter execution returning unique `USUBJID` count + matching IDs.
+  - `clinical_trial_agent.R` — schema definition, LLM prompt/parse logic (or mocked LLM response), and filter execution returning unique `USUBJID` count + matching IDs.
+  - `data/adae.csv` — Data read by the program
+- **Output:** Prompts and responses are generated on the console window as the questions are contained within the programs itself.
 
 ## How to Run
 
@@ -84,8 +87,7 @@ This repository contains my solutions to the **Pharmaverse Expertise and Python 
    ```
 4. For the Python bonus question:
    ```bash
-   pip install -r question_4_genai/requirements.txt
-   python question_4_genai/test_queries.py
+   python question_4_genai/clinical_trial_agent.py
    ```
 
 ## Notes for Reviewers
