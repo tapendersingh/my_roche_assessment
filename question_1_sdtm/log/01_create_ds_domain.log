@@ -1,0 +1,13 @@
+=======================================================================
+Log for 01_create_ds_domain.R
+Run started: 2026-09-06 15:10:39 
+=======================================================================
+
+G3;ℹ These terms could not be mapped per the controlled terminology: "Randomized", "Completed", "Study Terminated by Sponsor", "Screen Failure", and "Lost to Follow-Up".
+g
+DS domain successfully created and saved to question_1_sdtm/output/ds_domain.rds
+
+=======================================================================
+Run finished: 2026-09-06 15:10:40 
+STATUS: SUCCESS - program completed without errors.
+=======================================================================
