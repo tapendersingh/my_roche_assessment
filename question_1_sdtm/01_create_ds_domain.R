@@ -18,7 +18,7 @@
 # Date Created   : 2026-09-06
 # Last Modified  : 2026-09-06
 #
-# R Version      : R 4.2.0+
+# R Version      : R 4.5.3
 # Packages Used  : sdtm.oak, dplyr, tidyr
 #
 # Notes          : - Follows CDISC SDTMIG v3.4 DS domain specifications
@@ -38,7 +38,6 @@
 library(sdtm.oak)
 library(pharmaverseraw)
 library(pharmaversesdtm)
-library(admiral)
 library(dplyr)
 library(tidyr)
 
